@@ -40,12 +40,12 @@
 				{
                     "type": "git",
                     "url": "https://github.com/endless-network/DragonsApprentice_Binary.git",
-                    "commit":"8880fb342ec0c302466960a5c68d1d7701ff5520"
+                    "commit":"bce9af2bc14b3f314c7bb30cedee0c83eb3e363b"
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/endless-network/DragonsApprentice_Binary/releases/download/1.0/DragonsApprentice.zip",
-                    "sha256":"314eb2a11ba56c63c33aa7b99b8956faaef7e1b041b01958d9f4a970681933f9"
+                    "url": "https://github.com/endless-network/DragonsApprentice_Binary/releases/download/v1.1/DragonsApprentice.zip",
+                    "sha256":"0c4a0893fca499f125f12a2c29a7ae2a0314489b0e9d8c9173d96f44e02d17df"
                 }           
             ]
         }
