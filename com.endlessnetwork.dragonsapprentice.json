@@ -1,7 +1,7 @@
 {
     "app-id": "com.endlessnetwork.dragonsapprentice",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "com.endlessnetwork.dragonsapprentice.sh",
     "separate-locales": false,
@@ -40,7 +40,7 @@
 				{
                     "type": "git",
                     "url": "https://github.com/endless-network/DragonsApprentice_Binary.git",
-                    "commit":"bce9af2bc14b3f314c7bb30cedee0c83eb3e363b"
+                    "commit":"6deb17943a17a73a69f96e911c4064fefac9b658"
                 },
                 {
                     "type": "file",
