@@ -1,7 +1,7 @@
 {
     "app-id": "com.endlessnetwork.dragonsapprentice",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
+    "runtime-version": "20.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "com.endlessnetwork.dragonsapprentice.sh",
     "separate-locales": false,
