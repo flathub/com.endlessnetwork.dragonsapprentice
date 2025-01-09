@@ -5,12 +5,13 @@
     "sdk": "org.freedesktop.Sdk",
     "command": "com.endlessnetwork.dragonsapprentice.sh",
     "separate-locales": false,
-    "build-options" : {
+    "build-options": {
         "no-debuginfo": true,
         "strip": true
     },
     "finish-args": [
-        "--share=ipc", "--socket=x11",
+        "--share=ipc",
+        "--socket=x11",
         "--socket=pulseaudio",
         "--device=dri"
     ],
@@ -19,17 +20,16 @@
             "name": "DragonsApprentice",
             "buildsystem": "simple",
             "build-commands": [
-            	"install -D com.endlessnetwork.dragonsapprentice.sh /app/bin/com.endlessnetwork.dragonsapprentice.sh",
+                "install -D com.endlessnetwork.dragonsapprentice.sh /app/bin/com.endlessnetwork.dragonsapprentice.sh",
                 "install -Dm644 com.endlessnetwork.dragonsapprentice.desktop /app/share/applications/com.endlessnetwork.dragonsapprentice.desktop",
                 "install -Dm644 com.endlessnetwork.dragonsapprentice.appdata.xml /app/share/appdata/com.endlessnetwork.dragonsapprentice.appdata.xml",
                 "install -Dm644 com.endless_network.dragonsapprentice128.png /app/share/icons/hicolor/128x128/apps/com.endlessnetwork.dragonsapprentice.png",
-				"install -Dm644 com.endless_network.dragonsapprentice_64.png /app/share/icons/hicolor/64x64/apps/com.endlessnetwork.dragonsapprentice.png",
+                "install -Dm644 com.endless_network.dragonsapprentice_64.png /app/share/icons/hicolor/64x64/apps/com.endlessnetwork.dragonsapprentice.png",
                 "unzip DragonsApprentice.zip",
                 "install DragonsApprentice/DragonsApprentice.x64 /app/bin/DragonsApprentice.x64",
                 "mv DragonsApprentice/DragonsApprentice_Data /app/bin/"
             ],
-            "sources" : 
-            [
+            "sources": [
                 {
                     "type": "script",
                     "commands": [
@@ -37,16 +37,16 @@
                     ],
                     "dest-filename": "com.endlessnetwork.dragonsapprentice.sh"
                 },
-				{
+                {
                     "type": "git",
                     "url": "https://github.com/endless-network/DragonsApprentice_Binary.git",
-                    "commit":"0cb25dee0f8514a10eae1fa88b909bc4616dd01b"
+                    "commit": "0cb25dee0f8514a10eae1fa88b909bc4616dd01b"
                 },
                 {
                     "type": "file",
                     "url": "https://github.com/endless-network/DragonsApprentice_Binary/releases/download/v1.1/DragonsApprentice.zip",
-                    "sha256":"0c4a0893fca499f125f12a2c29a7ae2a0314489b0e9d8c9173d96f44e02d17df"
-                }           
+                    "sha256": "0c4a0893fca499f125f12a2c29a7ae2a0314489b0e9d8c9173d96f44e02d17df"
+                }
             ]
         }
     ]
