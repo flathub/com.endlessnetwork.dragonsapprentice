@@ -1,9 +1,10 @@
 {
     "app-id": "com.endlessnetwork.dragonsapprentice",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "24.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "com.endlessnetwork.dragonsapprentice.sh",
+    "tags": ["proprietary"],
     "separate-locales": false,
     "build-options": {
         "no-debuginfo": true,
@@ -20,9 +21,9 @@
             "name": "DragonsApprentice",
             "buildsystem": "simple",
             "build-commands": [
-                "install -D com.endlessnetwork.dragonsapprentice.sh /app/bin/com.endlessnetwork.dragonsapprentice.sh",
-                "install -Dm644 com.endlessnetwork.dragonsapprentice.desktop /app/share/applications/com.endlessnetwork.dragonsapprentice.desktop",
-                "install -Dm644 com.endlessnetwork.dragonsapprentice.appdata.xml /app/share/appdata/com.endlessnetwork.dragonsapprentice.appdata.xml",
+                "install -D com.endlessnetwork.dragonsapprentice.sh -t /app/bin/",
+                "install -Dm644 com.endlessnetwork.dragonsapprentice.desktop -t /app/share/applications/",
+                "install -Dm644 com.endlessnetwork.dragonsapprentice.appdata.xml -t /app/share/metainfo/",
                 "install -Dm644 com.endless_network.dragonsapprentice128.png /app/share/icons/hicolor/128x128/apps/com.endlessnetwork.dragonsapprentice.png",
                 "install -Dm644 com.endless_network.dragonsapprentice_64.png /app/share/icons/hicolor/64x64/apps/com.endlessnetwork.dragonsapprentice.png",
                 "unzip DragonsApprentice.zip",
